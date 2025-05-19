@@ -1,0 +1,68 @@
+name: paddy_scan_final
+description: "A new Flutter project."
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+# notification imports
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  permission_handler: ^11.3.1
+  shared_preferences: ^2.5.1
+
+# Scan_screen imports
+  image_picker: ^0.8.7+5
+  path_provider: ^2.1.5
+
+
+# main dart import
+  provider: ^6.1.2
+  sqflite: ^2.2.8+4
+  intl: ^0.18.1
+
+# Recods dart imports
+  photo_view: ^0.14.0
+  pdf: ^3.11.3
+  open_filex: ^4.7.0
+
+# loaded model imports
+  tflite_flutter: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  camera: ^0.10.5+9
+  flutter_launcher_icons: "^0.14.3"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+  flutter_lints: ^5.0.0
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/PaddyScanLogo.png
+    - assets/images/TapToOpenCam.png
+    - assets/images/PaddyScanned.png
+    - assets/models/rice_model/rice_Xception_model.tflite
+    - assets/models/rice_model/rice_label.txt
+    - assets/models/rice_status_model/rice_status_dense_net_model.tflite
+    - assets/models/rice_status_model/status_rice.txt
+
+
+
+
